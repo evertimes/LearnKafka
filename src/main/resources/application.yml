@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: producer
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+    groups-order: DESC
+    operationsSorter: method
+    disable-swagger-default-url: true
+  show-actuator: true
+  group-configs:
+    - group: stores
+      paths-to-match: /**
+
+server:
+  port: 8080
